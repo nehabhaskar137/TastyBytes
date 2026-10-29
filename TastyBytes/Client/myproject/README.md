@@ -2,7 +2,7 @@
 
 
 
-A food delivery web application built with \*\*Angular\*\* and \*\*Python/Django\*\*. TastyBytes provides a user-friendly interface for browsing food, managing orders, and accessing administrative features.
+\*\*TastyBytes\*\* is a food delivery web application developed using Angular and Python/Django. It aims to provide a convenient experience for browsing food, managing a cart, and placing orders.
 
 
 
@@ -14,29 +14,29 @@ A food delivery web application built with \*\*Angular\*\* and \*\*Python/Django
 
 \- \*\*Food Listings:\*\* Browse available food items.
 
-\- \*\*Cart and Ordering:\*\* Manage a cart and place orders.
+\- \*\*Cart and Ordering:\*\* Manage selected items and place orders.
 
-\- \*\*Admin Dashboard:\*\* Access administrative features.
-
-
-
-\## Tech Stack
+\- \*\*Admin Dashboard:\*\* Administrative features for managing the application.
 
 
 
-\*\*Frontend\*\*
+\## Technologies Used
 
-\- Angular
+
+
+\### Frontend
+
+\- Angular 16
 
 \- TypeScript
 
-\- HTML
+\- HTML5
 
-\- CSS
+\- CSS3
 
 
 
-\*\*Backend\*\*
+\### Backend
 
 \- Python
 
@@ -52,47 +52,39 @@ A food delivery web application built with \*\*Angular\*\* and \*\*Python/Django
 
 TastyBytes/
 
-├── Client/
+└── TastyBytes/
 
-│   └── myproject/
+&#x20;   └── Client/
 
-│       ├── src/
+&#x20;       └── myproject/
 
-│       │   └── app/
+&#x20;           ├── src/
 
-│       │       ├── login/
+&#x20;           │   └── app/
 
-│       │       ├── register/
+&#x20;           │       ├── login/
 
-│       │       ├── auth.service.ts
+&#x20;           │       ├── register/
 
-│       │       └── app-routing.module.ts
+&#x20;           │       ├── auth.service.ts
 
-│       ├── angular.json
+&#x20;           │       └── app-routing.module.ts
 
-│       └── package.json
+&#x20;           ├── angular.json
 
-└── \[Django backend files]
+&#x20;           └── package.json
 
 ```
 
 
 
-\*The backend folder structure may differ depending on the actual project layout.\*
+\## Run the Frontend
 
 
 
-\## Getting Started
+1\. Install Node.js and npm.
 
-
-
-\### Frontend
-
-
-
-1\. Install \[Node.js](https://nodejs.org/).
-
-2\. Open a terminal in the Angular project directory.
+2\. Open a terminal in the `Client/myproject` directory.
 
 3\. Install dependencies:
 
@@ -106,41 +98,27 @@ TastyBytes/
 
 
 
-4\. Start the Angular development server:
+4\. Start the development server:
 
 
 
 &#x20;  ```bash
 
-&#x20;  ng serve
+&#x20;  npx ng serve
 
 &#x20;  ```
 
 
 
-5\. Open `http://localhost:4200/` in your browser.
+5\. Open \[http://localhost:4200](http://localhost:4200) in your browser.
 
 
 
-\### Backend
+\## Backend Setup
 
 
 
-1\. Install Python and Django.
-
-2\. Open a terminal in the Django backend directory.
-
-3\. Install the project's required dependencies.
-
-4\. Apply migrations and start the Django development server using the project's configuration.
-
-
-
-\## Project Purpose
-
-
-
-This project demonstrates web application development using Angular and Django, including user authentication, food browsing, order management, and administrative functionality.
+The backend uses Python and Django. Run it from the Django project directory using its configured dependencies and settings.
 
 
 
@@ -148,13 +126,13 @@ This project demonstrates web application development using Angular and Django, 
 
 
 
-\- Responsive UI improvements
+\- Responsive design enhancements
 
-\- Order status tracking
+\- Order tracking
 
-\- Payment gateway integration
+\- Payment integration
 
-\- Automated testing and deployment
+\- Additional testing
 
 
 
