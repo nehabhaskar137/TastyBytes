@@ -1,27 +1,172 @@
-# Myproject
+\# TastyBytes 🍔
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A food delivery web application built with \*\*Angular\*\* and \*\*Python/Django\*\*. TastyBytes provides a user-friendly interface for browsing food, managing orders, and accessing administrative features.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+\## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+\- \*\*User Authentication:\*\* Login and registration.
 
-## Running end-to-end tests
+\- \*\*Food Listings:\*\* Browse available food items.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+\- \*\*Cart and Ordering:\*\* Manage a cart and place orders.
 
-## Further help
+\- \*\*Admin Dashboard:\*\* Access administrative features.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+\## Tech Stack
+
+
+
+\*\*Frontend\*\*
+
+\- Angular
+
+\- TypeScript
+
+\- HTML
+
+\- CSS
+
+
+
+\*\*Backend\*\*
+
+\- Python
+
+\- Django
+
+
+
+\## Project Structure
+
+
+
+```text
+
+TastyBytes/
+
+├── Client/
+
+│   └── myproject/
+
+│       ├── src/
+
+│       │   └── app/
+
+│       │       ├── login/
+
+│       │       ├── register/
+
+│       │       ├── auth.service.ts
+
+│       │       └── app-routing.module.ts
+
+│       ├── angular.json
+
+│       └── package.json
+
+└── \[Django backend files]
+
+```
+
+
+
+\*The backend folder structure may differ depending on the actual project layout.\*
+
+
+
+\## Getting Started
+
+
+
+\### Frontend
+
+
+
+1\. Install \[Node.js](https://nodejs.org/).
+
+2\. Open a terminal in the Angular project directory.
+
+3\. Install dependencies:
+
+
+
+&#x20;  ```bash
+
+&#x20;  npm install
+
+&#x20;  ```
+
+
+
+4\. Start the Angular development server:
+
+
+
+&#x20;  ```bash
+
+&#x20;  ng serve
+
+&#x20;  ```
+
+
+
+5\. Open `http://localhost:4200/` in your browser.
+
+
+
+\### Backend
+
+
+
+1\. Install Python and Django.
+
+2\. Open a terminal in the Django backend directory.
+
+3\. Install the project's required dependencies.
+
+4\. Apply migrations and start the Django development server using the project's configuration.
+
+
+
+\## Project Purpose
+
+
+
+This project demonstrates web application development using Angular and Django, including user authentication, food browsing, order management, and administrative functionality.
+
+
+
+\## Future Improvements
+
+
+
+\- Responsive UI improvements
+
+\- Order status tracking
+
+\- Payment gateway integration
+
+\- Automated testing and deployment
+
+
+
+\## Author
+
+
+
+\*\*Neha Bhaskar\*\*
+
+
+
+GitHub: \[nehabhaskar137](https://github.com/nehabhaskar137)
+
+
+
