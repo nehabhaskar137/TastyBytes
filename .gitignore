@@ -5,3 +5,12 @@ __pycache__/
 .env
 db.sqlite3
 __MACOSX/
+# Angular / Node.js
+node_modules/
+.angular/
+dist/
+coverage/
+
+# Local environment and editor files
+.env
+.vscode/

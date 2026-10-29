@@ -1,0 +1,139 @@
+<style>
+  /* Full-screen background */
+  .register-bg {
+      background: url('https://source.unsplash.com/1600x900/?food,restaurant') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+  }
+  
+  /* Dark overlay for readability */
+  .register-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Form container */
+  .register-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 400px;
+  }
+  
+  /* Card styling */
+  .register-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+  }
+  
+  /* Form title */
+  .register-title {
+      font-weight: bold;
+      color: #ff6600;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .register-input {
+      border-radius: 5px;
+      border: 1px solid #ff6600;
+      padding: 10px;
+      font-size: 16px;
+  }
+  
+  /* Label styling */
+  .register-label {
+      font-weight: bold;
+      color: #333;
+  }
+  
+  /* Submit button */
+  .register-btn {
+      background-color: #ff6600;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      transition: 0.3s;
+  }
+  
+  .register-btn:hover {
+      background-color: #e65c00;
+  }
+  
+  /* Error messages */
+  .error {
+      color: red;
+      font-size: 14px;
+  }
+  
+  /* Alert messages */
+  .alert-danger {
+      font-size: 14px;
+      text-align: center;
+  }
+  .register-link {
+        color: #ff6600;
+        font-weight: bold;
+        text-decoration: none;
+    }
+  </style>
+  
+  <div class="register-bg">
+      <div class="register-container">
+          <div class="card register-card">
+              <div class="card-body">
+                  <h2 class="register-title">Create an Account</h2>
+                  <form [formGroup]="registerForm" (ngSubmit)="register()">
+                      <div class="form-group">
+                          <label for="username" class="register-label">Username:</label>
+                          <input type="text" id="username" formControlName="username" required class="form-control register-input" />
+                          <div *ngIf="registerForm.get('username')?.invalid && (registerForm.get('username')?.dirty || registerForm.get('username')?.touched)" class="error">
+                              <small *ngIf="registerForm.get('username')?.errors?.['required']">Username is required.</small>
+                          </div>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="password" class="register-label">Password:</label>
+                          <input type="password" id="password" formControlName="password" required class="form-control register-input" />
+                          <div *ngIf="registerForm.get('password')?.invalid && (registerForm.get('password')?.dirty || registerForm.get('password')?.touched)" class="error">
+                              <small *ngIf="registerForm.get('password')?.errors?.['required']">Password is required.</small>
+                          </div>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="role" class="register-label">Role:</label>
+                          <select id="role" formControlName="role" class="form-control register-input">
+                              <option value="user">User</option>
+                              <option value="admin">Admin</option>
+                              <option value="restaurant">Restaurant</option>
+                          </select>
+                      </div>
+  
+                      <button type="submit" class="btn register-btn" [disabled]="registerForm.invalid">Register</button>
+  
+                      <div *ngIf="registerForm.invalid && (registerForm.get('username')?.touched || registerForm.get('password')?.touched)" class="alert alert-danger mt-3">
+                          Please fill in all required fields.
+                      </div>
+                  </form>
+                  <div class="text-center mt-3">
+                      <a routerLink="/login" class="register-link">Already have an account? Login here</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
